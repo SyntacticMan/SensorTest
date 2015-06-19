@@ -37,14 +37,14 @@ namespace SensorTest
 
         // limite a partir do qual o ficheiro é executado, ou seja,
         // quão sensível o telefone é ao movimento
-        double limitThreshold = 1.1;
+        double limitThreshold = 1.9;
 
         // definir o vibrador
         VibrationDevice vibrador { get; set; }
 
         // tempo que o vibrador fica a funcionar, entre 0 e 5 segundos
         // qualquer outro valor dá erro
-        int limitVibrate = 3;
+        int limitVibrate = 1;
 
 
         public MainPage()
