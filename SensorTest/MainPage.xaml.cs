@@ -44,7 +44,8 @@ namespace SensorTest
 
         // tempo que o vibrador fica a funcionar, entre 0 e 5 segundos
         // qualquer outro valor dá erro
-        int limitVibrate = 1;
+        // variável em milisegundos
+        double limitVibrate = 300.0;
 
 
         public MainPage()
@@ -100,7 +101,7 @@ namespace SensorTest
                     // vibrar quando toca, mas só se limitVibrate estiver entre 0 e 5
                     if ((limitVibrate < 6) || (limitVibrate > 0))
                     {
-                        vibrador.Vibrate(TimeSpan.FromSeconds(limitThreshold));
+                        vibrador.Vibrate(TimeSpan.FromMilliseconds(limitThreshold);
                     }
                 }
             }
